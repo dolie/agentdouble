@@ -13,7 +13,9 @@
           type="number"
           name="players"
           id=""
-          :value="players"
+          v-model="players"
+          min="3"
+          max="14"
         />
         <button autofocus @click="start">C'est parti !</button>
       </div>
