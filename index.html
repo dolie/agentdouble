@@ -9,14 +9,19 @@
       <div class="page" v-if="status === 'home'">
         <h1>Agent Double</h1>
         <label>Nombre de joueurs</label>
-        <input
-          type="number"
-          name="players"
-          id=""
-          v-model="players"
-          min="3"
-          max="14"
-        />
+        <select v-model="players">
+          <option selected>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
         <button autofocus @click="start">C'est parti !</button>
       </div>
       <div class="page" v-if="status === 'iddle'">
@@ -75,7 +80,7 @@
       padding: 25px;
       margin: 50px auto;
     }
-    input {
+    select {
       display: block;
       margin: 25px auto;
       text-align: center;
