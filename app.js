@@ -48,7 +48,7 @@ var app = new Vue({
             this.status = 'ready';
         },
         GO(){
-            if ( this.waitingPlayer === this.players ){
+            if ( this.waitingPlayer == this.players ){
                 this.status = 'started';
                 this.verifyTime();
             }else{
