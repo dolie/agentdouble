@@ -1,0 +1,22 @@
+{
+  "name": "agentdouble",
+  "version": "1.0.0",
+  "description": "Agent double role playind game also known as spyfall",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolie/agentdouble.git"
+  },
+  "author": "Olivier Ghafari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dolie/agentdouble/issues"
+  },
+  "homepage": "https://github.com/dolie/agentdouble#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

@@ -6,6 +6,9 @@ var app = new Vue({
         return {
             playerMessage : '',
             players       : 3,
+            minPlayers    : 3,
+            maxPlayers    : 16,
+            playerRange : [],
             status        : 'home',
             waitingPlayer : 1,
             timer         : 0,
@@ -37,7 +40,16 @@ var app = new Vue({
             newVal !== 'end' || this.audio.play();
         }
     },
+    created(){
+        this.range(this.minPlayers, this.maxPlayers);
+    },
     methods : {
+        range(min,max){
+            while(min !== max){
+                this.playerRange.push(min++);
+            }
+        },
+
         start(){
             this.choosePlace();
             this.status = 'iddle';
